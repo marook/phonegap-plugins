@@ -2,7 +2,7 @@ var GoogleAnalyticsPlugin = function()
 {
 }
 
-GoogleAnalyticsPlugin.prototype.startTrackerWithAccountId = function(ua_id)
+GoogleAnalyticsPlugin.prototype.startTrackerWithAccountID = function(ua_id)
 {
     console.log('Starting tracker');
     return PhoneGap.exec(function(args) {
@@ -13,7 +13,7 @@ GoogleAnalyticsPlugin.prototype.startTrackerWithAccountId = function(ua_id)
 
 }
 
-GoogleAnalyticsPlugin.prototype.trackPageView = function(page)
+GoogleAnalyticsPlugin.prototype.trackPageview = function(page)
 {
     return PhoneGap.exec(function(args) {
         success(args);
